@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Cajero Automatico ATM</title>
+</head>
+<body>
+    <div id="pared_cajero">
+        <img src="cajero-automatico.png" alt="Imagen Cajero" />
+        <div id="entrada_cantidad">
+            <label for="input_cantidad">Cantidad de plata requerida</label>
+            <input type="number" id="input_cantidad"/>
+            <button type="button" id="boton_sacar">SACAR</button>
+            <p id="resultado_p"></p>
+        </div>
+    </div>
+   
+    <div class="modal fade" id="miModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">RESPUESTA DEL CAJERO</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p id="mensaje-modal">Este es mi mensaje personalizado.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="cajero.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

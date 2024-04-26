@@ -1,0 +1,32 @@
+body {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    font-stretch: condensed;
+    font-size: 1em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#pared_cajero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button, input {
+    max-width: 100px;
+    margin: 2px !important;
+}
+
+img {
+    max-width: 80vw;
+    max-height: 70vh; 
+}
+
+#entrada_cantidad {
+    flex-grow: 1; /* Permite que este div ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
